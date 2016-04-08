@@ -1,10 +1,5 @@
 package org.bigbluebutton.common.messages;
 
-import org.boon.json.JsonFactory;
-import org.boon.json.ObjectMapper;
-
-import java.util.HashMap;
-
 /**
  * Created by anton on 06/04/16.
  */
@@ -30,14 +25,4 @@ public class VoiceUser {
         this.userId = userId;
         this.callerName = callerName;
     }
-
-//    public String toJson() {
-//        System.out.println("______user voice user toJson_____");
-//        ObjectMapper mapper = JsonFactory.create();
-//
-//        String json = mapper.writeValueAsString(this);
-//        System.out.println("-------------json=" + json);
-//        return json;
-//    }
-
 }

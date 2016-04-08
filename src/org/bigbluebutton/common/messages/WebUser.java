@@ -1,10 +1,6 @@
 package org.bigbluebutton.common.messages;
 
-import org.boon.json.JsonFactory;
-import org.boon.json.ObjectMapper;
-
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * Created by anton on 06/04/16.
@@ -20,7 +16,7 @@ public class WebUser {
     public Boolean locked;
     public String userId;
     public ArrayList<String> webcamStream;
-    public VoiceUser voiceUser; // this used to be a VoiceUser type
+    public VoiceUser voiceUser;
     public Boolean hasStream;
 
     public WebUser(String emojiStatus, String externUserID, Boolean phoneUser, String role, Boolean
@@ -40,19 +36,4 @@ public class WebUser {
         this.hasStream = hasStream;
     }
 
-//    public String toJson() {
-//        System.out.println("______user webuser toJson_____");
-//        ObjectMapper mapper = JsonFactory.create();
-//        String json = mapper.writeValueAsString(this);
-//        System.out.println("-------------json=" + json);
-//        return json;
-//    }
-//
-//    public static WebUser fromJson(String message) {
-//        System.out.println("______web user fromJson_____" + message);
-//        ObjectMapper mapper = JsonFactory.create();
-//        WebUser obj = mapper.readValue(message, WebUser.class);
-//        System.out.println("______obj=_____" + obj.userId);
-//        return obj;
-//    }
 }

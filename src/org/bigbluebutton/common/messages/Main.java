@@ -68,8 +68,8 @@ public class Main {
 
 
         UserJoinedMessage message2 = UserJoinedMessage.fromJson(string1);
-        System.out.println("message2 id=" + message2.meeting_id);
-        System.out.println("message2 id=" + message2.user.voiceUser.userId);
+        System.out.println("message2 id=" + message2.payload.meeting_id);
+        System.out.println("message2 id=" + message2.payload.user.voiceUser.userId);
         String string2 = message2.toJson();
         System.out.println("message2 to json:" + string2);
 
