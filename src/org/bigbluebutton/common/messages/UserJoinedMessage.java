@@ -25,7 +25,6 @@ public class UserJoinedMessage extends RedisEventMessage {
         return obj;
     }
 
-
     public class Payload {
         public WebUser user;
         public String meeting_id;

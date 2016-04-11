@@ -1,7 +1,5 @@
 package org.bigbluebutton.common.messages;
 
-import com.google.gson.JsonArray;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
