@@ -10,8 +10,6 @@ import java.util.Map;
  * Created by anton on 05/04/16.
  */
 public class Main {
-
-
     public static void main(String [ ] args){
         System.out.println("START");
 
@@ -27,7 +25,6 @@ public class Main {
 
         VoiceUser vu = new VoiceUser(callernum, webUserId, joined, talking, voiceLocked, muted,
                 voiceUserId, callername);
-
 
 
         Map<String, Object> userMap = new HashMap<String, Object>();
@@ -47,19 +44,6 @@ public class Main {
 
         WebUser wu = new WebUser(emojiStatus, extUserId, phoneUser, role, presenter, listenOnly,
                 username, locked, userid, webcamStreams, vu, hasStream);
-
-//        // round 1
-//        UserJoinedMessage message1 = new UserJoinedMessage("sampleMeeting", wu);
-//        RedisEventMessage msg = new RedisEventMessage("user_joineeeed", message1.toJson());
-//        String string1 = msg.toJson();
-//        System.out.println("message1 to json:" + string1);
-//
-//        // round 2
-//        RedisEventMessage msg2 = RedisEventMessage.fromJson(string1);
-////        System.out.println("msg2:" + msg2);
-//
-//        String string2 = msg2.toJson();
-//        System.out.println("message2 to json:" + string2);
 
 
         UserJoinedMessage message1 = new UserJoinedMessage("sampleMeeting", wu);
