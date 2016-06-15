@@ -23,7 +23,6 @@ public class TextShape extends GenericShape {
     public TextShape (String text, double textBoxHeight, ShapeTypes type, double textBoxWidth,
                       int fontColor, int fontSize, double x, double y, double calcedFontSize,
                       String dataPoints, ShapeStatus status, String whiteboard_id, String id) {
-        super(type);
         this.text = text;
         this.textBoxHeight = textBoxHeight;
         this.type = type;

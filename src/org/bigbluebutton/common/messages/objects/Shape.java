@@ -18,19 +18,14 @@ public class Shape {
                   String id) {
         this.shape_type = shape_type;
         this.wb_id = wb_id;
-//        this.shape = shape;
-        if (ShapeTypes.text == shape.shapeType ) {
+
+        if (shape instanceof TextShape){
             TextShape t = (TextShape) shape;
-            System.out.println("shape obj here:" + t.text);
             this.shape = t;
-        } else if (ShapeTypes.triangle == shape.shapeType ) {
+        } else if(shape instanceof InsideShape) {
             InsideShape t = (InsideShape) shape;
-            System.out.println("shape obj here:" + t.thickness);
             this.shape = t;
-        } else {
-            System.out.println("ELSE\n" + shape.shapeType);
         }
-        //TODO make this switch case
 
         this.status = status;
         this.id = id;

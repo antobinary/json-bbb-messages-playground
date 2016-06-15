@@ -19,7 +19,6 @@ public class InsideShape extends GenericShape {
 
     public InsideShape (ShapeTypes type, Double[] points, int color, Boolean transparency,
                         ShapeStatus status, String id, int thickness, String whiteboardId) {
-        super(type);
         this.type = type;
         this.points =  points;
         this.color = color;
