@@ -104,9 +104,6 @@ public class Main {
         System.out.println("Send whiteboard TEXT shape message");
         ShapeTypes shapeType = ShapeTypes.text;
 
-
-
-
         String text = "KKKKKKK\r";
         double textBoxHeight = 2.747678;
         ShapeTypes type = ShapeTypes.text;
