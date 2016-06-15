@@ -1,5 +1,6 @@
 package org.bigbluebutton.common.messages;
 
+import org.bigbluebutton.common.messages.objects.WebUser;
 import org.boon.json.JsonFactory;
 import org.boon.json.ObjectMapper;
 

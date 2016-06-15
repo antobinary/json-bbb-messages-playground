@@ -1,4 +1,4 @@
-package org.bigbluebutton.common.messages;
+package org.bigbluebutton.common.messages.objects;
 
 /**
  * Created by anton on 06/04/16.

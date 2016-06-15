@@ -1,4 +1,6 @@
-package org.bigbluebutton.common.messages;
+package org.bigbluebutton.common.messages.objects;
+
+import org.bigbluebutton.common.messages.objects.VoiceUser;
 
 import java.util.ArrayList;
 
